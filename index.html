@@ -98,12 +98,25 @@
           <p class="section-kicker align-left">Join the LCT community</p>
           <p>Be the first to hear about upcoming trainings, workshops, research updates, and new resources.
             Join a growing community of therapists, researchers, and clinicians shaping the future of relational therapy.</p>
-          <form id="newsletter-form" class="newsletter-form" action="#" method="post" data-provider="pending">
-            <label><span>First name</span><input type="text" name="first_name" autocomplete="given-name" placeholder="First Name" /></label>
+          <form
+            id="newsletter-form"
+            class="newsletter-form"
+            action="https://buttondown.com/api/emails/embed-subscribe/lct-btndown-2026"
+            method="post"
+            target="buttondown-result"
+            data-provider="buttondown"
+          >
+            <input type="hidden" name="embed" value="1" />
+            <label><span>First name</span><input type="text" name="metadata__first-name" autocomplete="given-name" placeholder="First Name" /></label>
             <label><span>Email address</span><input type="email" name="email" autocomplete="email" inputmode="email" placeholder="Email Address" required /></label>
             <button type="submit">Join the community</button>
             <p class="form-note" id="form-note">We respect your privacy. Unsubscribe at any time.</p>
           </form>
+          <div class="signup-thanks" id="signup-thanks" hidden tabindex="-1">
+            <p class="signup-thanks-title">Thank you for signing up.</p>
+            <p>Stay tuned for upcoming trainings, workshops, research updates, and new resources.</p>
+          </div>
+          <iframe class="sr-only" name="buttondown-result" title="Newsletter signup result"></iframe>
         </div>
       </div>
     </section>

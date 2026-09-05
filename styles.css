@@ -260,6 +260,10 @@ body {
   gap: .75rem;
   margin-top: 1.8rem;
 }
+.newsletter-form[hidden],
+.signup-thanks[hidden] {
+  display: none;
+}
 .newsletter-form label span {
   position: absolute;
   width: 1px;
@@ -303,12 +307,32 @@ body {
 }
 .newsletter-form button:hover,
 .newsletter-form button:focus-visible { background: #38332e; }
+.newsletter-form button:disabled {
+  cursor: wait;
+  opacity: .7;
+}
 .form-note {
   margin: .35rem 0 0 !important;
   text-align: center;
   font-family: "DM Sans", sans-serif !important;
   font-size: .67rem !important;
   color: var(--muted);
+}
+.signup-thanks {
+  margin-top: 1.8rem;
+  outline: none;
+}
+.signup-thanks-title {
+  margin: 0 0 .6rem;
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.15;
+}
+.signup-thanks p:last-child {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.55;
 }
 
 .site-footer {
