@@ -514,7 +514,7 @@ body {
     color: var(--blush);
   }
   .brand-note { font-size: 1rem; }
-  .publication-badge { font-size: .61rem; }
+  .publication-badge, .publication-magazine { width: 100%; font-size: .61rem; }
   .vision-panel {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
