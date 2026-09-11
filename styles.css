@@ -131,6 +131,7 @@ body {
 .publication-link {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
 }
 .hero-art {
   display: flex;
